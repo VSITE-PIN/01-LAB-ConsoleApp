@@ -11,6 +11,11 @@
 
             proizvod1.PrikaziInformacije();
             proizvod2.PrikaziInformacije();
+
+            ElektronickiUredjaj elektronickiUredjaj = 
+                new PametniTelefon("Tablet", "Samsung", 2022, "Android");
+
+            elektronickiUredjaj.IspisiInformacije();
         }
     }
 }

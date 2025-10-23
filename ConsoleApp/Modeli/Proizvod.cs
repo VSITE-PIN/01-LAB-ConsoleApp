@@ -1,0 +1,26 @@
+﻿namespace ConsoleApp.Modeli
+{
+
+public class Proizvod
+ {
+    public string Naziv { get; set; }
+    public decimal Cijena { get; set; }
+    public int DostupnaKolicina { get; set; }
+
+    public Proizvod(string naziv, decimal cijena, int dostupnaKolicina)
+     {
+        Naziv = naziv;
+        Cijena = cijena;
+        DostupnaKolicina = dostupnaKolicina;
+     }
+
+    public void IspisInformacije()
+        {
+        Console.WriteLine("\nInformacije o proizvodu\n" + "-------------------------\n");
+        Console.WriteLine("Naziv: " + Naziv);
+        Console.WriteLine("Cijena: " + Cijena + " EUR");
+        Console.WriteLine("Dostupna količina: " + DostupnaKolicina + " kom.");
+     }
+
+    }
+}

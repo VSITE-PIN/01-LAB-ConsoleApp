@@ -16,6 +16,10 @@ namespace ConsoleApp
             Cijena = cijena;
             DostupnaKolicina = dostupnaKolicina;
         }
+        
+        var mob = new PametniTelefon("Iphone 15 pro max", "Samsung", 2024, "Android");
+        mob.IspisiInformacije();
+mob.InstalirajAplikaciju("Viber");
 
         
         public void IspisiInformacije()

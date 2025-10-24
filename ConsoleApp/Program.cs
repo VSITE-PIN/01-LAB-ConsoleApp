@@ -1,10 +1,40 @@
-﻿namespace ConsoleApp
+﻿using System;
+
+namespace ConsoleApp
 {
-    internal class Program
+    
+    class Proizvod
+    {
+        public string Naziv { get; set; }
+        public decimal Cijena { get; set; }
+        public int DostupnaKolicina { get; set; }
+
+        
+        public Proizvod(string naziv, decimal cijena, int dostupnaKolicina)
+        {
+            Naziv = naziv;
+            Cijena = cijena;
+            DostupnaKolicina = dostupnaKolicina;
+        }
+
+        
+        public void IspisiInformacije()
+        {
+            Console.WriteLine($"Naziv: {Naziv}, Cijena: {Cijena} EUR, Dostupna količina: {DostupnaKolicina}");
+        }
+    }
+
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
+            Proizvod p = new Proizvod("Laptop", 999.99m, 5);
+
+            
+            p.IspisiInformacije();
+
+            Console.ReadLine(); 
         }
     }
 }

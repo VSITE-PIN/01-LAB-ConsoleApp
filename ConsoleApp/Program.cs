@@ -4,22 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("ZAdatak 1: Klase i objekti");
-
-            // Primjer iz prve vježbe
-            Proizvod proizvod1 = new Proizvod("Laptop", 1200.00m, 10);
-            Proizvod proizvod2 = new Proizvod("Televizija", 800.00m, 25);
+            // zad 1
+            Proizvod proizvod1 = new Proizvod("Laptop", 1400, 15);
+            Proizvod proizvod2 = new Proizvod("Televizija", 500, 23);
 
             proizvod1.PrikaziInformacije();
             proizvod2.PrikaziInformacije();
-
             Console.WriteLine();
-            Console.WriteLine("Zadatak 2: Nasljeđivanje");
 
-            // Primjer iz druge vježbe
-            PametniTelefon telefon = new PametniTelefon("iPhone 15", "Apple", 2023, "iOS 17");
+            // zad 2
+            PametniTelefon telefon = new PametniTelefon("Pixel 9a", "Google", 2025, "Android 15");
             telefon.IspisiDetaljeTelefona();
-            telefon.InstalirajAplikaciju("Instagram");
+            telefon.InstalirajAplikaciju("Threads");
 
             Console.ReadLine();
         }
